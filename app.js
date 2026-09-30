@@ -83,7 +83,7 @@ const stories = {
   },
   cg: {
     title: 'CG Dispo', category: 'Local services / Ghana', role: 'Social Media & Marketing Lead · July to December 2025', image: 'assets/cg.webp', alt: 'CG Dispo cleaning service promotional creative', asset: 'assets/cg.webp', film: 'laundry',
-    sections: [['From launch', 'Build a recognisable digital presence for a service business and make the offer understandable enough for people to enquire.'], ['What I owned', 'Brand positioning, content direction and paid advertising. Brought service education, practical proof and promotional messaging into one presence.'], ['What moved', 'Recorded 45% growth in engagement during the role, as documented in my campaign examples and master CV.'], ['The visible work', 'A promotional post and a reel showing a couch cleaning service in action. The process itself gives the content a concrete story to tell.']]
+    sections: [['From launch', 'Build a recognisable digital presence for a service business and make the offer understandable enough for people to enquire.'], ['What I owned', 'Brand positioning, content direction and paid advertising. Brought service education, practical proof and promotional messaging into one presence.'], ['The visible work', 'A promotional post and a reel showing a couch cleaning service in action. The process itself gives the content a concrete story to tell.']]
   },
   formica: {
     title: 'Formica Agency', category: 'Education & careers / Content & growth', role: 'Marketing Team Lead · October 2024 to October 2025', image: 'assets/formica.webp', alt: 'Formica brand introduction creative', asset: 'assets/formica.webp', film: 'formica',

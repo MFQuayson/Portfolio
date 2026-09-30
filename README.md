@@ -1,6 +1,6 @@
 # Mcloyd Fiifi Quayson Portfolio
 
-Complete portable export of the published portfolio, version 3, exported on 30 September 2026.
+Personal portfolio website of Mcloyd Fiifi Quayson, digital marketing lead based in Accra, Ghana.
 
 ## Included
 
@@ -13,11 +13,11 @@ There is no build step and no package installation required. This website uses H
 
 ## Preview locally
 
-Extract this ZIP. Open index.html in a modern browser, or run the following command from the extracted folder:
+Open index.html in a modern browser, or run this command from the project folder:
 
     python3 -m http.server 8000
 
-Then open http://localhost:8000 in your browser. Keep the assets folder alongside index.html, style.css and app.js.
+Then open http://localhost:8000. Keep the assets folder alongside index.html, style.css and app.js.
 
 ## Make changes
 
@@ -28,20 +28,8 @@ Replace media in assets/ and update any corresponding filenames in index.html an
 
 No backend or database is required. Contact buttons open the visitor's email or phone application. Video files are loaded when a visitor selects a video.
 
-## Publish elsewhere
+## Publish
 
-Upload index.html, style.css, app.js and the entire assets folder to a static website host. The archive places index.html directly at its root so there is no build configuration to set.
+Upload index.html, style.css, app.js and the entire assets folder to any static host, such as GitHub Pages or Netlify. There is no build step.
 
-For Netlify manual deployment, extract the ZIP and upload the folder containing index.html and assets. Confirm the project's visitor access is public before sharing its address.
-
-If you use a new website address, update the canonical link and og:url value in index.html. The export preserves the currently published address:
-
-https://mcloyd-quayson-portfolio.mcloyd.chatgpt.site
-
-Changing this downloaded copy does not automatically change the existing hosted portfolio. Upload the updated files to your selected host, or request an update in the PORTFOLIO - BACKEND conversation.
-
-## Source provenance
-
-Published source commit: c98e027c50491779411730b24b68dade91f6719d.
-
-The export contains the website files and assets, with no credentials, repository history or hosting account configuration.
+Once the site has its own address, add a canonical link and og:url tag with that address to the head of index.html.
