@@ -26,10 +26,20 @@ Edit the stories and films objects in app.js for project detail text and media r
 Edit the colour variables near the beginning of style.css for the palette.
 Replace media in assets/ and update any corresponding filenames in index.html and app.js.
 
-No backend or database is required. Contact buttons open the visitor's email or phone application. Video files are loaded when a visitor selects a video.
+No backend or database is required. The project and role buttons open an enquiry window. Visitors can prepare their message, then review and send it using their email application or Gmail. The website itself does not send or store messages. Phone links open the visitor's phone application. Video files are loaded when a visitor selects a video.
 
 ## Publish
 
 Upload index.html, style.css, app.js and the entire assets folder to any static host, such as GitHub Pages or Netlify. There is no build step.
 
 Once the site has its own address, add a canonical link and og:url tag with that address to the head of index.html.
+
+## Included updates, 30 September 2026
+
+Vintage Aesthetics and Oasis Beach Resort include their current brand logos and fuller case details. Oasis includes a resort image from its official website.
+
+The contact area includes Mcloyd’s LinkedIn, Instagram and Facebook. In My range, the five linked brand names open their social pages in a new tab.
+
+The colours, layout and styling customisations in the supplied ZIP are retained. Existing responsive phone styles are included.
+
+The welcome paragraph, supporting brand lines, metadata and CG Dispo result wording have been restored to the portfolio version from before the uploaded ZIP. New social links, brand details and enquiry features remain included.

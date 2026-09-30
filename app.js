@@ -78,20 +78,20 @@ const stories = {
     sections: [['The opportunity', 'People book when they can picture themselves there. The task was to make the hotel experience tangible, with a clear path from discovery to reservation.'], ['What I owned', 'Website updates, SEO, digital positioning and content. Coordinated local and international paid campaigns and seasonal promotions around tourism demand.'], ['How the work showed up', 'A seasonal booking creative paired with a hospitality reel. The room, the setting and the reason to visit work together, rather than leaving the offer to carry the whole story.']]
   },
   oasis: {
-    title: 'Oasis Beach Resort', category: 'Rebranding / Hospitality / Cape Coast', role: 'Project Lead · Rebranding & Digital Positioning · 2024–2025', concept: ['Oasis is changing.', 'Follow our journey.'], conceptNote: 'Campaign direction from my Oasis rebranding materials. This panel is a strategy excerpt.',
-    sections: [['The brand problem', 'A resort in transformation needs more than new visuals. Guests and the community need to understand what is changing and why the place still matters.'], ['What I owned', 'Led rebranding and digital positioning, including an identity refresh and campaign direction rooted in heritage, community and the resort’s next chapter.'], ['The story system', 'My campaign concept connects Cape Coast’s history, the people around the resort, daily experiences and the transformation itself. The documentary outline, “The Journey to the New OASIS,” turns that direction into a longer narrative.'], ['Beyond the feed', 'The materials connect reels, stories, room tours, broadcast updates and segmented email communication for tour operators and individual guests. QR and link journeys create routes into that communication.'], ['The distinction', 'These are excerpts from the concept and storyline materials. Proposed scenes and interview prompts are planning work, rather than completed production or quoted testimonials.']]
+    title: 'Oasis Beach Resort', category: 'Rebranding / Hospitality / Cape Coast', role: 'Project Lead · Rebranding & Digital Positioning · 2024–2025', image: 'assets/oasis-brand-photo.jpg', alt: 'Guest room shown on the Oasis Beach Resort website', brand: { logo: 'assets/oasis-logo.png', name: 'Oasis Beach Resort', note: 'Current brand identity and resort image from the official website.', instagram: 'https://www.instagram.com/oasisbeachresort/', website: 'https://www.theoasisbeachresort.com/' }, concept: ['Oasis is changing.', 'Follow our journey.'], conceptNote: 'Campaign direction from my Oasis rebranding materials. This panel is a strategy excerpt.',
+    sections: [['The place behind the project', 'A beach resort in Cape Coast, Ghana, bringing accommodation, dining and coastal experiences into one destination.'], ['The brand problem', 'A resort in transformation needs more than new visuals. Guests and the community need to understand what is changing and why the place still matters.'], ['What I owned', 'Led rebranding and digital positioning, including an identity refresh and campaign direction rooted in heritage, community and the resort’s next chapter.'], ['The story system', 'My campaign concept connects Cape Coast’s history, the people around the resort, daily experiences and the transformation itself. The documentary outline, “The Journey to the New OASIS,” turns that direction into a longer narrative.'], ['Beyond the feed', 'The materials connect reels, stories, room tours, broadcast updates and segmented email communication for tour operators and individual guests. QR and link journeys create routes into that communication.'], ['The distinction', 'These are excerpts from the concept and storyline materials. Proposed scenes and interview prompts are planning work, rather than completed production or quoted testimonials.']]
   },
   cg: {
     title: 'CG Dispo', category: 'Local services / Ghana', role: 'Social Media & Marketing Lead · July to December 2025', image: 'assets/cg.webp', alt: 'CG Dispo cleaning service promotional creative', asset: 'assets/cg.webp', film: 'laundry',
-    sections: [['From launch', 'Build a recognisable digital presence for a service business and make the offer understandable enough for people to enquire.'], ['What I owned', 'Brand positioning, content direction and paid advertising. Brought service education, practical proof and promotional messaging into one presence.'], ['The visible work', 'A promotional post and a reel showing a couch cleaning service in action. The process itself gives the content a concrete story to tell.']]
+    sections: [['From launch', 'Build a recognisable digital presence for a service business and make the offer understandable enough for people to enquire.'], ['What I owned', 'Brand positioning, content direction and paid advertising. Brought service education, practical proof and promotional messaging into one presence.'], ['What moved', 'Recorded 45% growth in engagement during the role, as documented in my campaign examples and master CV.'], ['The visible work', 'A promotional post and a reel showing a couch cleaning service in action. The process itself gives the content a concrete story to tell.']]
   },
   formica: {
     title: 'Formica Agency', category: 'Education & careers / Content & growth', role: 'Marketing Team Lead · October 2024 to October 2025', image: 'assets/formica.webp', alt: 'Formica brand introduction creative', asset: 'assets/formica.webp', film: 'formica',
     sections: [['The audience', 'People looking for opportunities bring ambition, uncertainty and very familiar frustrations. Useful content needs to recognise all three.'], ['What I owned', 'Social strategy, creative content and posting systems, media buying, website updates and analytics. Connected the brand introduction with content people could relate to.'], ['What moved', 'Social engagement increased by 45% through creative content strategy and consistent posting, as recorded in my CV.'], ['The creative range', 'The introduction post explains the brand. The job search reel uses a human hook and humour. Different formats, with the same audience in mind.']]
   },
   aesthetics: {
-    title: 'Trust across borders', category: 'United Kingdom / Nigeria / Aesthetics', role: 'Social Media Strategist and Social Media Manager', concept: ['Trust comes before', 'the booking.'], conceptNote: 'Two clinic roles. Education, positioning and audience growth.', conceptClass: 'concept-aesthetics',
-    sections: [['Vintage Aesthetics by Ma Dell · UK', 'Social Media Strategist, June 2023 to March 2024. Used education and storytelling to support a premium clinic position and consultation interest. Engagement increased by more than 50%.'], ['MPN Aesthetics Clinic · Nigeria', 'Social Media Manager, October 2023 to January 2024. Managed content and paid optimisation. Engagement increased by 20% and followers by 15% within three months.'], ['The shared thinking', 'A clinic’s digital presence has to help people understand the service, see the brand consistently and feel comfortable taking the next step. The work connects audience education with consideration.'], ['The evidence', 'These figures and roles are recorded in my CV and campaign examples. This is a written case summary, with no invented clinic imagery or testimonial.']]
+    title: 'Vintage Aesthetics by MaDell', category: 'United Kingdom / Aesthetics / Social strategy', role: 'Social Media Strategist · June 2023 to March 2024', brand: { logo: 'assets/vintage-logo.png', name: 'Vintage Aesthetics by MaDell', note: 'Current brand logo from the official website.', instagram: 'https://www.instagram.com/vintageaestheticsbymadell/', website: 'https://www.vaestheticsbymadell.co.uk/' }, concept: ['Trust comes before', 'the booking.'], conceptNote: 'Education, positioning and storytelling, with more than 50% engagement growth during my role.', conceptClass: 'concept-aesthetics',
+    sections: [['The brand', 'An aesthetics clinic and training business based in Enfield, London. Its offer spans aesthetic treatments, skin and beauty services, and practitioner education.'], ['My work at Vintage · UK', 'Social Media Strategist, June 2023 to March 2024. Used education and storytelling to support a premium clinic position and consultation interest. Engagement increased by more than 50%.'], ['MPN Aesthetics Clinic · Nigeria', 'Social Media Manager, October 2023 to January 2024. Managed content and paid optimisation. Engagement increased by 20% and followers by 15% within three months.'], ['The shared thinking', 'A clinic’s digital presence has to help people understand the service, see the brand consistently and feel comfortable taking the next step. The work connects audience education with consideration.'], ['The evidence', 'These figures and roles are recorded in my CV and campaign examples. The current logo provides brand context. My role and engagement results refer to the period shown above.']]
   },
   xie: {
     title: 'Xie Trails', category: 'Travel / Brand identity sample', role: 'Selected identity applications from my portfolio archive', image: 'assets/xie.webp', alt: 'Xie Trails identity applied to a tote bag, shirt and cap', asset: 'assets/xie.webp',
@@ -112,9 +112,11 @@ const films = {
 };
 const projectDialog = $('#project-dialog');
 const filmDialog = $('#film-dialog');
+const enquiryDialog = $('#enquiry-dialog');
 const player = $('#film-player');
-let projectTrigger, filmTrigger;
-function syncModalBody() { document.body.classList.toggle('dialog-open', projectDialog.open || filmDialog.open); }
+let projectTrigger, filmTrigger, enquiryTrigger;
+let enquiryType = 'project';
+function syncModalBody() { document.body.classList.toggle('dialog-open', projectDialog.open || filmDialog.open || enquiryDialog.open); }
 function openFilm(key, trigger) {
   const film = films[key]; if (!film) return;
   filmTrigger = trigger;
@@ -130,6 +132,13 @@ $$('[data-project]').forEach(button => button.addEventListener('click', () => {
   const story = stories[button.dataset.project]; if (!story) return;
   projectTrigger = button;
   $('#dialog-title').textContent = story.title; $('#dialog-category').textContent = story.category; $('#dialog-role').textContent = story.role;
+  const brand = $('#dialog-brand'); brand.hidden = !story.brand;
+  if (story.brand) {
+    $('#dialog-brand-logo').src = story.brand.logo; $('#dialog-brand-logo').alt = `${story.brand.name} logo`;
+    $('#dialog-brand-note').textContent = story.brand.note;
+    const links = $('#dialog-brand-links'); links.replaceChildren();
+    [['Instagram', story.brand.instagram], ['Brand website', story.brand.website]].forEach(([label, url]) => { const link = document.createElement('a'); link.textContent = label; link.href = url; link.target = '_blank'; link.rel = 'noopener'; links.append(link); });
+  }
   const image = $('#dialog-image'), concept = $('#dialog-concept'), asset = $('#dialog-asset');
   image.hidden = !story.image; concept.hidden = !story.concept; asset.hidden = !story.asset;
   if (story.image) { image.src = story.image; image.alt = story.alt; }
@@ -148,14 +157,33 @@ $('#dialog-film').addEventListener('click', event => { const key = event.current
 $('#dialog-close').addEventListener('click', () => projectDialog.close());
 $('#film-close').addEventListener('click', () => filmDialog.close());
 $('#dialog-contact').addEventListener('click', () => projectDialog.close());
-[projectDialog, filmDialog].forEach(dialog => dialog.addEventListener('click', event => { const rect = dialog.getBoundingClientRect(); if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close(); }));
+[projectDialog, filmDialog, enquiryDialog].forEach(dialog => dialog.addEventListener('click', event => { const rect = dialog.getBoundingClientRect(); if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close(); }));
 projectDialog.addEventListener('close', () => { syncModalBody(); if (!filmDialog.open) projectTrigger?.focus({ preventScroll: true }); });
 filmDialog.addEventListener('close', () => { player.pause(); player.removeAttribute('src'); player.load(); syncModalBody(); filmTrigger?.focus({ preventScroll: true }); });
-$$('[data-contact]').forEach(button => button.addEventListener('click', () => {
-  $$('[data-contact]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-  const subject = button.dataset.contact === 'role' ? 'A role worth talking about' : 'Let’s talk about a project';
+function updateEnquiryDraft() {
+  const subject = enquiryType === 'role' ? 'A role worth talking about' : 'Let’s talk about a project';
+  const name = $('#enquiry-name').value.trim(), company = $('#enquiry-company').value.trim(), message = $('#enquiry-message').value.trim();
+  const body = ['Hi Mcloyd,', '', message || (enquiryType === 'role' ? 'I would like to discuss a role with you.' : 'I would like to discuss a project with you.'), '', company ? `Brand or organisation: ${company}` : '', name ? `From: ${name}` : ''].filter((line, index, lines) => line || (index > 0 && lines[index - 1])).join('\n');
+  $('#enquiry-email').href = `mailto:mquayson582@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmail = new URL('https://mail.google.com/mail/');
+  gmail.search = new URLSearchParams({ view: 'cm', fs: '1', to: 'mquayson582@gmail.com', su: subject, body }).toString();
+  $('#enquiry-gmail').href = gmail.href;
   $('#email-link').href = `mailto:mquayson582@gmail.com?subject=${encodeURIComponent(subject)}`;
-}));
+}
+function openEnquiry(type, trigger) {
+  enquiryType = type === 'role' ? 'role' : 'project'; enquiryTrigger = trigger;
+  $$('[data-contact]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.contact === enquiryType)));
+  const role = enquiryType === 'role';
+  $('#enquiry-title').textContent = role ? 'A team. A role. A little more possibility.' : 'Let’s build something worth noticing.';
+  $('#enquiry-message-label').textContent = role ? 'Tell me about the opportunity' : 'What are we making happen?';
+  $('#enquiry-message').placeholder = role ? 'The role, the team, the location, and what you need someone to bring.' : 'The idea, the challenge, the timing. Start anywhere.';
+  updateEnquiryDraft(); enquiryDialog.showModal(); enquiryDialog.scrollTop = 0; syncModalBody();
+}
+$$('[data-contact]').forEach(button => button.addEventListener('click', () => openEnquiry(button.dataset.contact, button)));
+$('#email-link').addEventListener('click', event => { event.preventDefault(); openEnquiry(enquiryType, event.currentTarget); });
+['#enquiry-name', '#enquiry-company', '#enquiry-message'].forEach(selector => $(selector).addEventListener('input', updateEnquiryDraft));
+$('#enquiry-close').addEventListener('click', () => enquiryDialog.close());
+enquiryDialog.addEventListener('close', () => { syncModalBody(); enquiryTrigger?.focus({ preventScroll: true }); });
 const motionButton = $('#motion-toggle');
 function updateMotionControl() {
   if (reducedMotion.matches) { motionButton.textContent = 'Reduced motion'; motionButton.disabled = true; motionButton.setAttribute('aria-pressed', 'true'); $$('.reveal').forEach(item => item.classList.add('visible')); }
