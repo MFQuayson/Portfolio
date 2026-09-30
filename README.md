@@ -32,7 +32,9 @@ No backend or database is required. The project and role buttons open an enquiry
 
 Upload index.html, style.css, app.js and the entire assets folder to any static host, such as GitHub Pages or Netlify. There is no build step.
 
-Once the site has its own address, add a canonical link and og:url tag with that address to the head of index.html.
+The published address is https://mfquayson.github.io/Portfolio/. The canonical link, Open Graph URL and share image URL in index.html use this address. If you move to a different domain, update those absolute URLs, including the Twitter image URL.
+
+Link previews use assets/mcloyd-social-preview.jpg, a 1200 by 630 JPEG featuring the original portrait, name and roles. Open Graph metadata is included in the initial HTML so sharing crawlers do not need JavaScript. Twitter large card metadata uses the same image. Sharing apps control the final crop and may cache older previews. Share the published website URL rather than the GitHub repository URL.
 
 ## Included updates, 30 September 2026
 
