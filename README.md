@@ -7,7 +7,11 @@ Personal portfolio website of Mcloyd Fiifi Quayson, digital marketing lead based
 * index.html: page layout, text, metadata and navigation.
 * style.css: orange and charcoal design, responsive layouts and motion.
 * app.js: project stories, filters, tabs, video playback, dialogs and contact controls.
-* assets/: original portfolio images, six videos, posters, favicon, CV and strategy sample PDF.
+* editorial.css: selected work gallery and motion showcase.
+* work/: directly shareable Invest Africa 54 and Chateau Nana Willine case study pages.
+* case-studies.css and case-study.js: responsive case study presentation and share controls.
+* sitemap.xml: homepage and case study URLs.
+* assets/: original portfolio images, eight videos, posters, favicon, CV and strategy sample PDF.
 
 There is no build step and no package installation required. This website uses HTML, CSS and JavaScript.
 
@@ -30,7 +34,7 @@ No backend or database is required. The project and role buttons open an enquiry
 
 ## Publish
 
-Upload index.html, style.css, app.js and the entire assets folder to any static host, such as GitHub Pages or Netlify. There is no build step.
+Upload all root HTML, CSS and JavaScript files, sitemap.xml, and the entire assets and work folders to any static host, such as GitHub Pages or Netlify. There is no build step.
 
 The published address is https://mfquayson.github.io/Portfolio/. The canonical link, Open Graph URL and share image URL in index.html use this address. If you move to a different domain, update those absolute URLs, including the Twitter image URL.
 
@@ -45,3 +49,14 @@ The contact area includes Mcloyd’s LinkedIn, Instagram and Facebook. In My ran
 The colours, layout and styling customisations in the supplied ZIP are retained. Existing responsive phone styles are included.
 
 The welcome paragraph, supporting brand lines, metadata and CG Dispo result wording have been restored to the portfolio version from before the uploaded ZIP. New social links, brand details and enquiry features remain included.
+
+
+## Editorial and motion update, 5 October 2026
+
+The selected work gallery alternates full width feature projects with smaller cards. The original welcome section and copy remain intact. Dedicated case studies are available at work/invest-africa-54/ and work/chateau-nana-willine/. Edit their index.html files to change the case study content. Both pages include static social metadata and a share button that uses native sharing where available, then a copy link fallback.
+
+The motion showcase features How To Give Online and the FECI logo reveal, supplied from the portfolio Reels folder. Their browser versions use H.264 video, AAC audio, fast start metadata and click to play controls. The walkthrough is 720 by 1280 and the logo reveal is 1920 by 1080. Original source files are retained in Drive. Poster images load before playback; video files load only on selection. A text walkthrough accompanies the giving animation. No compulsory intro or autoplay was added.
+
+New case study role and outcome information was checked against the CV updated on 30 September 2026. Invest Africa's $1.5M+ figure is projected deal value, not completed revenue. The Chateau case study uses qualitative outputs without inventing a booking uplift.
+
+When moving to another domain, also update absolute metadata URLs in both case study pages, their data-share-url attributes, and sitemap.xml.
