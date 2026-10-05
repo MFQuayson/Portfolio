@@ -103,6 +103,8 @@ const stories = {
   }
 };
 const films = {
+  giving: { title: 'How To Give Online', category: 'FECI / Animated website walkthrough / 2026', source: 'assets/feci-giving-walkthrough.mp4', poster: 'assets/feci-giving-poster.jpg', description: 'An animated walkthrough of online giving for Faith Empowered Chapel International. Phone framing, enlarged interface details and a sequence of on-screen steps guide the viewer through the journey.' },
+  logo: { title: 'Faith Empowered Chapel International', category: 'FECI / Logo reveal / 2026', source: 'assets/feci-logo-reveal.mp4', poster: 'assets/feci-logo-poster.jpg', description: 'A seven second logo reveal for Faith Empowered Chapel International, using light, movement and sound to build toward the completed identity.' },
   hotel: { title: 'Chateau Nana Willine', category: 'Hospitality / Selected brand reel', source: 'assets/hotelFilm.mp4', poster: 'assets/hotelFilm.jpg', description: 'A hospitality reel from my portfolio archive, connecting the setting and hotel experience with the brand’s digital presentation.' },
   formica: { title: 'Job hunting. We’ve been there.', category: 'Formica / Relatable social content', source: 'assets/formica-reel.mp4', poster: 'assets/reel-poster.jpg', description: 'A short social video that turns familiar job search frustrations into a relatable hook.' },
   invest: { title: 'Invest Africa 54', category: 'US based brand / Investment campaign', source: 'assets/investFilm.mp4', poster: 'assets/investFilm.jpg', description: 'A short investment campaign video from my portfolio collection. It is presented as an example of marketing work.' },
@@ -150,6 +152,10 @@ $$('[data-project]').forEach(button => button.addEventListener('click', () => {
   if (story.asset) { asset.href = story.asset; asset.textContent = story.assetLabel || 'View original sample'; }
   const body = $('#dialog-story'); body.replaceChildren();
   story.sections.forEach(([heading, copy]) => { const h3 = document.createElement('h3'), p = document.createElement('p'); h3.textContent = heading; p.textContent = copy; body.append(h3, p); });
+  const caseLink = $('#dialog-case');
+  const casePaths = { invest: 'work/invest-africa-54/', hotel: 'work/chateau-nana-willine/' };
+  const casePath = casePaths[button.dataset.project];
+  caseLink.hidden = !casePath; if (casePath) caseLink.href = casePath;
   const filmButton = $('#dialog-film'); filmButton.hidden = !story.film; filmButton.dataset.filmKey = story.film || '';
   projectDialog.showModal(); projectDialog.scrollTop = 0; syncModalBody();
 }));
