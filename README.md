@@ -11,7 +11,7 @@ Personal portfolio website of Mcloyd Fiifi Quayson, digital marketing lead based
 * work/: directly shareable Invest Africa 54 and Chateau Nana Willine case study pages.
 * case-studies.css and case-study.js: responsive case study presentation and share controls.
 * sitemap.xml: homepage and case study URLs.
-* assets/: original portfolio images, eight videos, posters, favicon, CV and strategy sample PDF.
+* assets/: original portfolio images, nine videos, posters, favicon, CV and strategy sample PDF.
 
 There is no build step and no package installation required. This website uses HTML, CSS and JavaScript.
 
@@ -60,3 +60,14 @@ The motion showcase features How To Give Online and the FECI logo reveal, suppli
 New case study role and outcome information was checked against the CV updated on 30 September 2026. Invest Africa's $1.5M+ figure is projected deal value, not completed revenue. The Chateau case study uses qualitative outputs without inventing a booking uplift.
 
 When moving to another domain, also update absolute metadata URLs in both case study pages, their data-share-url attributes, and sitemap.xml.
+
+
+## Perspective and motion pages, 12 October 2026
+
+The homepage features Mcloyd's LinkedIn article published on 19 August 2026, with a short excerpt and direct link. The article is not embedded or republished. Its layout and the Besorah Creative featured card are in portfolio-updates.css.
+
+Besorah Creative joins the FECI walkthrough and logo reveal in the motion showcase. Its supplied 1280 by 720 silent animation is encoded as a browser friendly H.264 fast start MP4. The original file remains in Drive.
+
+Each featured animation has an individual page under motion/: besorah-creative/, how-to-give-online/ and feci-logo-reveal/. The native video source is in the initial HTML, with controls, playsinline, metadata preloading, and a poster. The pages contain VideoObject metadata, individual 1200 by 630 sharing previews, descriptive text, download links, share controls and a project enquiry link. Only metadata is requested before playback on motion pages. Homepage videos still load only on selection. Videos do not autoplay or loop.
+
+Edit each motion page's index.html for content, metadata and video references. motion.css controls their responsive layout. The shared case-study.js handles both case study and video sharing. After moving to another domain, update canonical, social, VideoObject and data-share-url values in these pages, along with sitemap.xml.

@@ -9,7 +9,7 @@ shareButton?.addEventListener('click', async () => {
       await navigator.share({ title: document.title, url });
     } else if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(url);
-      shareStatus.textContent = 'Case study link copied.';
+      shareStatus.textContent = `${shareButton.dataset.shareLabel || 'Case study'} link copied.`;
     } else {
       shareStatus.textContent = `Share this link: ${url}`;
     }

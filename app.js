@@ -103,6 +103,7 @@ const stories = {
   }
 };
 const films = {
+  besorah: { title: 'Besorah Creative', category: 'Besorah Creative / Logo animation / 2026', source: 'assets/besorah-logo-reveal.mp4', poster: 'assets/besorah-logo-poster.jpg', description: 'A ten second silent logo animation. A fine outline introduces the mark, followed by the magenta identity, a diagonal shadow and the completed Besorah Creative name.' },
   giving: { title: 'How To Give Online', category: 'FECI / Animated website walkthrough / 2026', source: 'assets/feci-giving-walkthrough.mp4', poster: 'assets/feci-giving-poster.jpg', description: 'An animated walkthrough of online giving for Faith Empowered Chapel International. Phone framing, enlarged interface details and a sequence of on-screen steps guide the viewer through the journey.' },
   logo: { title: 'Faith Empowered Chapel International', category: 'FECI / Logo reveal / 2026', source: 'assets/feci-logo-reveal.mp4', poster: 'assets/feci-logo-poster.jpg', description: 'A seven second logo reveal for Faith Empowered Chapel International, using light, movement and sound to build toward the completed identity.' },
   hotel: { title: 'Chateau Nana Willine', category: 'Hospitality / Selected brand reel', source: 'assets/hotelFilm.mp4', poster: 'assets/hotelFilm.jpg', description: 'A hospitality reel from my portfolio archive, connecting the setting and hotel experience with the brand’s digital presentation.' },
