@@ -71,3 +71,12 @@ Besorah Creative joins the FECI walkthrough and logo reveal in the motion showca
 Each featured animation has an individual page under motion/: besorah-creative/, how-to-give-online/ and feci-logo-reveal/. The native video source is in the initial HTML, with controls, playsinline, metadata preloading, and a poster. The pages contain VideoObject metadata, individual 1200 by 630 sharing previews, descriptive text, download links, share controls and a project enquiry link. Only metadata is requested before playback on motion pages. Homepage videos still load only on selection. Videos do not autoplay or loop.
 
 Edit each motion page's index.html for content, metadata and video references. motion.css controls their responsive layout. The shared case-study.js handles both case study and video sharing. After moving to another domain, update canonical, social, VideoObject and data-share-url values in these pages, along with sitemap.xml.
+
+
+## Role clarity and service enquiries, 19 October 2026
+
+The homepage role line and sharing/search descriptions position Mcloyd as a social media manager, growth manager and digital marketer. The approved welcome line, main headline, portrait preview and wider career story are preserved.
+
+The services section after selected work offers social media management, growth strategy and digital marketing. Each card links to relevant existing work and a service-specific enquiry. Keep service keys (social, growth, digital) aligned with serviceNames in app.js. The selected service appears in the dialog and is retained in both email and Gmail draft links, including when the visitor writes their own message. General project and role enquiries reset the service selection. Ordinary mailto links remain available without JavaScript. No message is sent by the website.
+
+The existing capabilities section remains as a deeper explanation of the work. Service cards use existing typography, lightweight CSS, three desktop columns and stacked mobile rows. No new media, external scripts or fonts are required.

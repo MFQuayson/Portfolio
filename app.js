@@ -119,6 +119,8 @@ const enquiryDialog = $('#enquiry-dialog');
 const player = $('#film-player');
 let projectTrigger, filmTrigger, enquiryTrigger;
 let enquiryType = 'project';
+let enquiryService = '';
+const serviceNames = { social: 'Social media management', growth: 'Growth strategy', digital: 'Digital marketing' };
 function syncModalBody() { document.body.classList.toggle('dialog-open', projectDialog.open || filmDialog.open || enquiryDialog.open); }
 function openFilm(key, trigger) {
   const film = films[key]; if (!film) return;
@@ -168,17 +170,22 @@ $('#dialog-contact').addEventListener('click', () => projectDialog.close());
 projectDialog.addEventListener('close', () => { syncModalBody(); if (!filmDialog.open) projectTrigger?.focus({ preventScroll: true }); });
 filmDialog.addEventListener('close', () => { player.pause(); player.removeAttribute('src'); player.load(); syncModalBody(); filmTrigger?.focus({ preventScroll: true }); });
 function updateEnquiryDraft() {
-  const subject = enquiryType === 'role' ? 'A role worth talking about' : 'Let’s talk about a project';
+  const service = serviceNames[enquiryService];
+  const subject = enquiryType === 'role' ? 'A role worth talking about' : service ? `${service} enquiry` : 'Let’s talk about a project';
   const name = $('#enquiry-name').value.trim(), company = $('#enquiry-company').value.trim(), message = $('#enquiry-message').value.trim();
-  const body = ['Hi Mcloyd,', '', message || (enquiryType === 'role' ? 'I would like to discuss a role with you.' : 'I would like to discuss a project with you.'), '', company ? `Brand or organisation: ${company}` : '', name ? `From: ${name}` : ''].filter((line, index, lines) => line || (index > 0 && lines[index - 1])).join('\n');
+  const body = ['Hi Mcloyd,', '', service ? `I’m interested in ${service.toLowerCase()}.` : '', message || (enquiryType === 'role' ? 'I would like to discuss a role with you.' : 'I would like to discuss a project with you.'), '', company ? `Brand or organisation: ${company}` : '', name ? `From: ${name}` : ''].filter((line, index, lines) => line || (index > 0 && lines[index - 1])).join('\n');
   $('#enquiry-email').href = `mailto:mquayson582@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   const gmail = new URL('https://mail.google.com/mail/');
   gmail.search = new URLSearchParams({ view: 'cm', fs: '1', to: 'mquayson582@gmail.com', su: subject, body }).toString();
   $('#enquiry-gmail').href = gmail.href;
   $('#email-link').href = `mailto:mquayson582@gmail.com?subject=${encodeURIComponent(subject)}`;
 }
-function openEnquiry(type, trigger) {
+function openEnquiry(type, trigger, service = '') {
   enquiryType = type === 'role' ? 'role' : 'project'; enquiryTrigger = trigger;
+  enquiryService = enquiryType === 'project' && serviceNames[service] ? service : '';
+  const serviceLabel = $('#enquiry-service');
+  serviceLabel.hidden = !enquiryService;
+  serviceLabel.textContent = enquiryService ? `Let’s talk about ${serviceNames[enquiryService].toLowerCase()}.` : '';
   $$('[data-contact]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.contact === enquiryType)));
   const role = enquiryType === 'role';
   $('#enquiry-title').textContent = role ? 'A team. A role. A little more possibility.' : 'Let’s build something worth noticing.';
@@ -187,7 +194,12 @@ function openEnquiry(type, trigger) {
   updateEnquiryDraft(); enquiryDialog.showModal(); enquiryDialog.scrollTop = 0; syncModalBody();
 }
 $$('[data-contact]').forEach(button => button.addEventListener('click', () => openEnquiry(button.dataset.contact, button)));
-$('#email-link').addEventListener('click', event => { event.preventDefault(); openEnquiry(enquiryType, event.currentTarget); });
+$$('.service-proof[href^="#"]').forEach(link => link.addEventListener('click', () => {
+  const target = document.getElementById(link.hash.slice(1));
+  if (target?.hidden && target.classList.contains('project')) $('[data-filter="all"]').click();
+}));
+$$('[data-service]').forEach(link => link.addEventListener('click', event => { event.preventDefault(); openEnquiry('project', link, link.dataset.service); }));
+$('#email-link').addEventListener('click', event => { event.preventDefault(); openEnquiry(enquiryType, event.currentTarget, enquiryService); });
 ['#enquiry-name', '#enquiry-company', '#enquiry-message'].forEach(selector => $(selector).addEventListener('input', updateEnquiryDraft));
 $('#enquiry-close').addEventListener('click', () => enquiryDialog.close());
 enquiryDialog.addEventListener('close', () => { syncModalBody(); enquiryTrigger?.focus({ preventScroll: true }); });
