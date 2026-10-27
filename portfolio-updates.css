@@ -13,3 +13,14 @@
 @media(max-width:1000px){.hire-service-grid{gap:14px}.hire-service-card{padding:26px 20px}.hire-service-card h3{font-size:28px}.hire-service-actions a{font-size:13px}}
 @media(max-width:760px){.hire-services{padding-bottom:70px}.hire-service-grid{grid-template-columns:1fr;gap:20px}.service-heading h2{font-size:clamp(33px,7.5vw,44px)}.service-heading>p:last-child{font-size:16px}.hire-service-card{padding:28px}.hire-service-card h3{font-size:34px;margin-top:20px}.hire-service-actions a{font-size:14px}.hire-service-card ul{margin-bottom:23px}}
 @media(prefers-reduced-motion:reduce){.service-enquire{transition:none}}
+
+/* A cinematic entrance and the first featured campaign. */
+@media (prefers-reduced-motion: no-preference){
+.hero-copy h1 span,.hero-copy h1 em,.hero-description,.hero-actions,.person-panel .portrait-card{animation:portfolio-arrive .7s cubic-bezier(.2,.75,.2,1) both}
+.hero-copy h1 em{animation-delay:.22s}.hero-description{animation-delay:.42s}.hero-actions{animation-delay:.53s}.person-panel .portrait-card{animation-delay:.32s}
+.hero-copy h1 em{position:relative;isolation:isolate}.hero-copy h1 em:after{content:"";position:absolute;inset:8% 0;background:var(--orange);z-index:-1;transform-origin:left;animation:portfolio-sweep .8s cubic-bezier(.65,0,.2,1) .15s both;pointer-events:none}
+.project-feature.visible .feature-invest .feature-copy{animation:portfolio-arrive .7s cubic-bezier(.2,.75,.2,1) both}.project-feature.visible .feature-invest .feature-art{animation:portfolio-arrive .8s cubic-bezier(.2,.75,.2,1) .12s both}.project-feature.visible .feature-invest .feature-result{animation:portfolio-arrive .55s ease .3s both}
+}
+@keyframes portfolio-arrive{from{opacity:0;translate:0 22px}to{opacity:1;translate:0 0}}
+@keyframes portfolio-sweep{0%{transform:scaleX(0);opacity:.55}65%{transform:scaleX(1);opacity:.22}100%{transform:scaleX(1);opacity:0}}
+html.motion-paused .hero-copy h1 span,html.motion-paused .hero-copy h1 em,html.motion-paused .hero-description,html.motion-paused .hero-actions,html.motion-paused .person-panel .portrait-card,html.motion-paused .project-feature .feature-copy,html.motion-paused .project-feature .feature-art,html.motion-paused .project-feature .feature-result{animation:none!important;opacity:1!important;translate:none!important}html.motion-paused .hero-copy h1 em:after{animation:none!important;opacity:0!important}
