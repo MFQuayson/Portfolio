@@ -31,7 +31,7 @@ function wireTabs(container) {
   });
   select(tabs.find(tab => tab.getAttribute('aria-selected') === 'true') || tabs[0]);
 }
-wireTabs($('.studio-tabs')); wireTabs($('.strategy-tabs'));
+wireTabs($('.studio-tabs')); wireTabs($('.strategy-tabs')); wireTabs($('.campaign-tabs'));
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .06 });
   $$('.reveal').forEach(element => observer.observe(element));
@@ -194,6 +194,7 @@ function openEnquiry(type, trigger, service = '') {
   updateEnquiryDraft(); enquiryDialog.showModal(); enquiryDialog.scrollTop = 0; syncModalBody();
 }
 $$('[data-contact]').forEach(button => button.addEventListener('click', () => openEnquiry(button.dataset.contact, button)));
+$$('.campaign-story a[href="#formica-work"]').forEach(link => link.addEventListener('click', () => { if ($('#formica-work').hidden) $('[data-filter="all"]').click(); }));
 $$('.service-proof[href^="#"]').forEach(link => link.addEventListener('click', () => {
   const target = document.getElementById(link.hash.slice(1));
   if (target?.hidden && target.classList.contains('project')) $('[data-filter="all"]').click();
